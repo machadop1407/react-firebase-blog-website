@@ -23,7 +23,7 @@ function Home({ isAuth }) {
     <div className="homePage">
       {postLists.map((post) => {
         return (
-          <div className="post">
+          <div className="post" key={post.id}>
             <div className="postHeader">
               <div className="title">
                 <h1> {post.title}</h1>
